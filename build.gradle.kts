@@ -9,11 +9,22 @@ plugins {
     // Kotlin support
     id("org.jetbrains.kotlin.jvm") version "1.6.10"
     // Gradle IntelliJ Plugin
-    id("org.jetbrains.intellij") version "1.3.1"
+    id("org.jetbrains.intellij") version "1.8.1"
     // Gradle Changelog Plugin
     id("org.jetbrains.changelog") version "1.3.1"
     // Gradle Qodana Plugin
     id("org.jetbrains.qodana") version "0.1.13"
+}
+configurations {
+    implementation
+}
+dependencies {
+    implementation("org.ini4j:ini4j:0.5.4")
+    implementation("org.projectlombok:lombok:1.18.22")
+    implementation("org.projectlombok:lombok:1.18.22")
+
+    compileOnly("org.projectlombok:lombok:1.18.24")
+    annotationProcessor("org.projectlombok:lombok:1.18.24")
 }
 
 group = properties("pluginGroup")
@@ -49,6 +60,10 @@ qodana {
 }
 
 tasks {
+    buildSearchableOptions {
+        enabled = false
+    }
+
     // Set the JVM compatibility versions
     properties("javaVersion").let {
         withType<JavaCompile> {
@@ -90,6 +105,9 @@ tasks {
         })
     }
 
+    runIde {
+        ideDir.set(File(properties("dataGripDir")))
+    }
     // Configure UI tests plugin
     // Read more: https://github.com/JetBrains/intellij-ui-test-robot
     runIdeForUiTests {
