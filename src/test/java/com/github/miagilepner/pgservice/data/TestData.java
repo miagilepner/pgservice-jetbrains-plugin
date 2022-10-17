@@ -4,7 +4,6 @@ import com.intellij.database.dataSource.LocalDataSource;
 import com.intellij.database.remote.jdbc.helpers.JdbcSettings;
 import com.intellij.openapi.vfs.VfsUtil;
 import com.intellij.openapi.vfs.VirtualFile;
-import com.intellij.testFramework.TestDataPath;
 import com.intellij.util.ResourceUtil;
 import org.ini4j.Ini;
 import org.ini4j.Profile;
@@ -15,7 +14,6 @@ import java.net.URL;
 
 import static org.junit.Assert.assertEquals;
 
-@TestDataPath("testData")
 public class TestData {
     protected static String NAME = "my_name";
     protected static String USERNAME = "my_username";
