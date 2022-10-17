@@ -9,7 +9,7 @@ plugins {
     // Kotlin support
     id("org.jetbrains.kotlin.jvm") version "1.6.10"
     // Gradle IntelliJ Plugin
-    id("org.jetbrains.intellij") version "1.8.1"
+    id("org.jetbrains.intellij") version "1.9.0"
     // Gradle Changelog Plugin
     id("org.jetbrains.changelog") version "1.3.1"
     // Gradle Qodana Plugin
@@ -17,14 +17,25 @@ plugins {
 }
 configurations {
     implementation
+    testImplementation
+}
+sourceSets {
+    test {
+        resources {
+            srcDir("src/test/testData")
+        }
+    }
+
 }
 dependencies {
     implementation("org.ini4j:ini4j:0.5.4")
-    implementation("org.projectlombok:lombok:1.18.22")
+    implementation("org.projectlombok:lombok:1.18.24")
     implementation("org.projectlombok:lombok:1.18.22")
 
     compileOnly("org.projectlombok:lombok:1.18.24")
     annotationProcessor("org.projectlombok:lombok:1.18.24")
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.hamcrest:hamcrest:2.2")
 }
 
 group = properties("pluginGroup")

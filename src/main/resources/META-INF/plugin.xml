@@ -6,7 +6,7 @@
 
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.database</depends>
-    <actions resource-bundle="messages.DatabaseBundle">
+    <actions resource-bundle="messages.PGServiceBundle">
         <group id="com.github.miagilepner.pgservice">
             <separator/>
             <action id="import" class="com.github.miagilepner.pgservice.actions.ImportAction" icon="AllIcons.Providers.Postgresql" />
