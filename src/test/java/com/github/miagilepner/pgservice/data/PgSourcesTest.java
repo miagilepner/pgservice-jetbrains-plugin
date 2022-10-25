@@ -41,6 +41,7 @@ public class PgSourcesTest {
 
     @Test
     public void parseSection() throws IOException {
+        // add mocking for indicator
         PgSource parsed = PgSource.fromSection(TestData.getPGServiceSection(serviceName), usePGPass, null);
         Optional<PgSource> expectedSource = PG_SERVICE_SOURCES.getWithName(serviceName);
         assertTrue(expectedSource.isPresent());

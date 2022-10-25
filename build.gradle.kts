@@ -30,8 +30,6 @@ sourceSets {
 dependencies {
     implementation("org.ini4j:ini4j:0.5.4")
     implementation("org.projectlombok:lombok:1.18.24")
-    implementation("org.projectlombok:lombok:1.18.22")
-
     compileOnly("org.projectlombok:lombok:1.18.24")
     annotationProcessor("org.projectlombok:lombok:1.18.24")
     testImplementation("junit:junit:4.13.2")
