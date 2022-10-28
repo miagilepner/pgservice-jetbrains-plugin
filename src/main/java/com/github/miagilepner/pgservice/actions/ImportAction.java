@@ -4,7 +4,6 @@ import com.github.miagilepner.pgservice.data.PgServiceBundle;
 import com.github.miagilepner.pgservice.dialogs.ImportProgressIndicator;
 import com.github.miagilepner.pgservice.dialogs.ImportDialogWrapper;
 import com.intellij.database.autoconfig.DataSourceRegistry;
-import com.intellij.openapi.actionSystem.ActionUpdateThread;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.progress.ProgressIndicator;
 import com.intellij.openapi.progress.ProgressManager;
@@ -15,10 +14,6 @@ import org.jetbrains.annotations.NotNull;
 
 
 public class ImportAction extends DumbAwareAction {
-    @Override
-    public ActionUpdateThread getActionUpdateThread() {
-        return ActionUpdateThread.BGT;
-    }
 
     @Override
     public void actionPerformed(@NotNull AnActionEvent e) {

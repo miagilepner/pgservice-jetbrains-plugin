@@ -7,7 +7,7 @@ import com.intellij.database.autoconfig.DataSourceRegistry;
 import com.intellij.database.dataSource.DataSourceSslConfiguration;
 import com.intellij.database.dataSource.LocalDataSource;
 import com.intellij.database.remote.jdbc.helpers.JdbcSettings;
-import com.jgoodies.common.base.Strings;
+import com.intellij.openapi.util.text.Strings;
 import lombok.*;
 import org.ini4j.Profile;
 
