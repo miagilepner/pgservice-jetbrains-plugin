@@ -12,7 +12,7 @@ public class PgFile {
     private static String defaultFile(String prop) {
         String userHome = System.getProperty("user.home");
         if (SystemInfoRt.isWindows) {
-            prop = prop +".windows";
+            prop += ".windows";
         }
         return PgServiceBundle.message(prop, userHome);
     }
