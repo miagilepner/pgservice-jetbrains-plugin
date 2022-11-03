@@ -9,15 +9,18 @@ Import PostgreSQL databases from pg_services.conf. Supports:
 - overwriting existing datasources
 - using credentials from pgpass
 
-![PGService full import](resources/import.gif)
-![PGService option on menu](resources/menu.png)
-![PGService dialog](resources/dialog.png)
-![PGService dialog with pgpass](resources/dialog2.png)
-![Imported sources](resources/sources.png)
-
 Existing datasources are overwritten based on the service name - the service name must match the name of the datasource.
 
 The service must be present in the pgservices file to be imported.  
+
+![PGService full import](resources/import.gif)
+<img src="https://github.com/miagilepner/pgservice-jetbrains-plugin/blob/59d78e21de8d70763935878b14ece5c78a302281/resources/menu.png" height=600px>
+
+<img src="https://github.com/miagilepner/pgservice-jetbrains-plugin/blob/59d78e21de8d70763935878b14ece5c78a302281/resources/dialog.png" width=50%>
+<img src="https://github.com/miagilepner/pgservice-jetbrains-plugin/blob/59d78e21de8d70763935878b14ece5c78a302281/resources/dialog2.png" width=50%>
+
+<img src="https://github.com/miagilepner/pgservice-jetbrains-plugin/blob/59d78e21de8d70763935878b14ece5c78a302281/resources/sources.png" height=600px>
+
 <!-- Plugin description end -->
 
 ## Installation
