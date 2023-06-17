@@ -2,7 +2,7 @@
 
 # pgservice-jetbrains-plugin Changelog
 
-## [0.0.2]
+## [Unreleased]
 ### Added
 - Support IntelliJ versions up to 232.*
 
