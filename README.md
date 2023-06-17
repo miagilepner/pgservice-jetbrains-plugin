@@ -1,8 +1,8 @@
 # pgservice-jetbrains-plugin
 
 ![Build](https://github.com/miagilepner/pgservice-jetbrains-plugin/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/com.github.miagilepner.pgservice.svg)](https://plugins.jetbrains.com/plugin/com.github.miagilepner.pgservice)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/com.github.miagilepner.pgservice.svg)](https://plugins.jetbrains.com/plugin/com.github.miagilepner.pgservice)
+[![Version](https://img.shields.io/jetbrains/plugin/v/com.github.miagilepner.pgservice.svg)](https://plugins.jetbrains.com/plugin/20275-pgservice)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/com.github.miagilepner.pgservice.svg)](https://plugins.jetbrains.com/plugin/20275-pgservice)
 
 <!-- Plugin description -->
 Import PostgreSQL databases from pg_services.conf. Supports:
