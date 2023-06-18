@@ -46,7 +46,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           distribution: zulu
-          java-version: 11
+          java-version: 17
           cache: gradle
 
       # Set environment variables
@@ -71,7 +71,7 @@ jobs:
 
       # Run tests
       - name: Run Tests
-        run: ./gradlew test
+        run: ./gradlew test --scan
 
       # Collect Tests Result of failed tests
       - name: Collect Tests Result
