@@ -115,7 +115,10 @@ tasks {
     }
 
     runIde {
-        ideDir.set(File(properties("dataGripDir")))
+        val dataGripDir = File(properties("dataGripDir"))
+        if (dataGripDir.exists()) {
+            ideDir.set(dataGripDir)
+        }
     }
     // Configure UI tests plugin
     // Read more: https://github.com/JetBrains/intellij-ui-test-robot
